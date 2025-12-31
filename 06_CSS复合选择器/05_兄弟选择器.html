@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>兄弟选择器</title>
+    <style>
+        /* “+”选择下面的相邻的兄弟元素（div下面相邻的兄弟P元素） --相邻兄弟选择器 */
+        /* div+p {
+            color: aqua;
+        } */
+
+        /* "~"选择下面的所有兄弟元素（div下面所有兄弟P元素） --通用兄弟选择器 */
+        div ~ p {
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <p>HTML</p>
+    <div>尚硅谷</div>
+    <p>前段</p>
+    <p>Java</p>
+    <p>大数据</p>
+    <p>UI</p>
+</body>
+</html>

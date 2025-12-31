@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>23_布局技巧2</title>
+    <style>
+      /* 块元素内的行内元素当做块元素中的一段文字进行位置的调整 */
+      .outer {
+        width: 400px;
+        height: 400px;
+        background-color: gray;
+        text-align: center;
+        line-height: 400px;
+      }
+      span {
+        font-size: 20px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <span>出来玩啊</span>
+    </div>
+  </body>
+</html>

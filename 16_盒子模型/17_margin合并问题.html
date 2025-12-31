@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>17_margin合并问题</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+        /* 上下margin会合并，可设置box1为100px */
+        .box1 {
+            background-color: deeppink;
+            margin-bottom: 50px;
+        }
+        .box2 {
+            background-color: darksalmon;
+            margin-top: 50px;
+        }
+        .text {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+        .texta {
+            background-color: gainsboro;
+            margin-right: 50px;
+        }
+        .textb {
+            background-color: oldlace;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <br>
+    <hr>
+    <br>
+    <div class="text texta">a</div><div class="text textb">b</div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        look this
+        <img src="../images/16_17.png" alt="">
+    </div>
+</body>
+</html>

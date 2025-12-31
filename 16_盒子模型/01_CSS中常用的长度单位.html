@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>01_CSS中常用的长度单位</title>
+    <style>
+        html {
+            font-size: 40px;
+        }
+        /* 第一种长度单位:px 像素 */
+        #d1 {
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            background-color: aqua;
+        }
+
+        /* 第二种：em 相对于当前元素或其父元素（当前元素没有fontsize，向祖宗元素找fontsize）fontsize的倍数 */
+        #d2 {
+            width: 10em;
+            height: 10em;
+            font-size: 20px;
+            background-color: rgb(246, 79, 79);
+        }
+
+        /* 第三种：rem 相对于根元素(html 没有设置则为浏览器默认元素)的fontsize的倍数 */
+        #d3 {
+            width: 5rem;
+            height: 5rem;
+            font-size: 20px;
+            background-color: green;
+        }
+
+        /* 第四种：% 相对于父元素的百分比 */
+        #d4 {
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            background-color: orange;
+        }
+        .inside {
+            width: 50%;
+            height: 25%;
+            font-size: 150%;
+            background-color: gray;
+        }
+        .text {
+            font-size: 20px;
+            text-indent: 2em;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">1</div>
+    <hr>
+    <div id="d2">2</div>
+    <hr>
+    <div id="d3">3</div>
+    <hr>
+    <div id="d3">
+        <div class="inside">4</div>
+    </div>
+    <hr>
+    <div class="text">好好学习，天天向上。</div>
+    <hr>
+    <div>
+        看这
+        <img src="../images/16_01.png" alt="">
+    </div>
+</body>
+</html>

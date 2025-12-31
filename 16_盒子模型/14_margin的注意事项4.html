@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>14_margin的注意事项4</title>
+    <style>
+        div {
+            width: 500px;
+            height: 100px;
+            background-color: antiquewhite;
+            /* margin-left: auto;
+            margin-right: auto; */
+            margin: 0 auto;
+        }
+
+        span{
+            background-color: aquamarine;
+            margin-left: auto ;
+            margin-right: auto ;
+        }
+    </style>
+</head>
+<body>
+    <!-- margin的值可以是auto，给一个块级元素左右设置为auto可以实现该元素在其父元素中水平居中 -->
+    <div>桐谷和人</div>
+    <hr>
+    <span>桐谷和人</span>
+</body>
+</html>

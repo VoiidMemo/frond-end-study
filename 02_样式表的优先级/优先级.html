@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>优先级</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        h1 {
+            color: blue;
+            font-size: 100px;
+        }
+        p {
+            color: red;
+            font-size: 40px;
+        }
+        div {
+            color: blueviolet;
+            font-size: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 style="color:red;">Hello World!</h1> <!--行内样式优先级高于内部样式和外部样式-->
+    <h2 style="color: blue;">This is a study text</h2>
+    <p>today is a good day</p> <!--内部样式和外部样式优先级相同，根据引入顺序决定，显示为后引入的属性-->
+    <div>this is a text</div>
+</body>
+</html>

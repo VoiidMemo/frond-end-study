@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>18_处理内容溢出</title>
+    <style>
+      #d1 {
+        height: 400px;
+        width: 400px;
+        background-color: aqua;
+        overflow: auto;
+        /* 下面两个不推荐使用，实验性属性 */
+        /* overflow-x: hidden;
+        overflow-y: scroll; */
+      }
+      #d2 {
+        width: 1000px;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestias
+      amet dignissimos. Consequatur, suscipit ab tenetur exercitationem deleniti
+      dolores odit consectetur tempora impedit iusto asperiores! Hic id
+      voluptate itaque numquam magni voluptatem sequi quidem dicta explicabo ea
+      omnis,
+      <div id="d2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ratione
+        ipsum ipsa qui libero quam vitae laboriosam voluptatum id esse!
+      </div>
+      suscipit maxime ex quas. Veritatis repellat magnam tempore, illum ducimus
+      blanditiis eligendi magni, ea aliquam corrupti quia rerum dolore
+      laudantium, dolorem quo sapiente maxime laboriosam. Quam, numquam facilis.
+      Voluptatum nobis recusandae explicabo maiores. Officia quos facilis neque
+      placeat iste dolorem fuga autem commodi quibusdam adipisci! Itaque officia
+      fugit dolore consectetur, perferendis assumenda, deleniti error
+      blanditiis, dolorem praesentium voluptates eligendi labore ad sed.
+    </div>
+    <br />
+    <hr />
+    <br />
+    <hr />
+    <div>
+      there
+      <img src="../images/16_18.png" alt="" />
+    </div>
+  </body>
+</html>

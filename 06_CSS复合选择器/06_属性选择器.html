@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        /* 选中具有title属性的元素 */
+        /* [title] {
+            color: red;
+        } */
+
+        /* 选中具有title属性，且值为ikirito1的元素 */
+        /* [title="ikirito1"] {
+            color: aqua;
+        } */
+
+        /* 选中具有title属性，且值以字母a开头的元素 */
+        /* [title^="a"] {
+            color: bisque;
+        } */
+
+        /* 选中具有title属性，且值以字母u结尾的元素 */
+        /* [title$="u"] {
+            color: blueviolet;
+        } */
+
+        /* 选中具有title属性，且值包含字母ito的元素 */
+        [title*="ito"] {
+            color: slategrey;
+        }
+    </style>
+</head>
+<body>
+    <div title="ikirito1">桐谷和人1</div>
+    <div title="ikirito2">桐谷和人2</div>
+    <div title="kirito">桐谷和人3</div>
+    <div title="kirito">桐谷和人4</div>
+</body>
+</html>

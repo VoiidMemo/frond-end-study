@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>26_行内块的幽灵空白问题</title>
+    <style>
+      div {
+        width: 600px;
+        background-color: aqua;
+        /* 方案3 */
+        font-size: 0;
+      }
+      img {
+        height: 200px;
+        /* 解决方案1：除了默认的baseline会出现幽灵空白问题，top、middle、bottom都可以解决这个问题 */
+        /* vertical-align: top; */
+        /* 解决方案2：将图片设置为块元素，但后面不能有其他内容 */
+        /* display: block; */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="../images/img1.jpg" alt="" />
+    </div>
+    <hr />
+    <img src="../images/16_26.png" alt="" />
+  </body>
+</html>
